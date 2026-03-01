@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flight Ticket Booking</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>SkyHigh Airlines</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Flights</a></li>
+                <li><a href="#">Deals</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="booking-form">
+            <h2>Book Your Flight</h2>
+            <form action="#" method="post">
+                <div class="form-group">
+                    <label for="from">From:</label>
+                    <input type="text" id="from" name="from" placeholder="Departure City" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="to">To:</label>
+                    <input type="text" id="to" name="to" placeholder="Destination City" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="departure">Departure Date:</label>
+                    <input type="date" id="departure" name="departure" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="return">Return Date:</label>
+                    <input type="date" id="return" name="return">
+                </div>
+
+                <div class="form-group">
+                    <label for="passengers">Passengers:</label>
+                    <input type="number" id="passengers" name="passengers" min="1" max="10" value="1" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="class">Class:</label>
+                    <select id="class" name="class">
+                        <option value="economy">Economy</option>
+                        <option value="business">Business</option>
+                        <option value="first">First Class</option>
+                    </select>
+                </div>
+
+                <button type="submit" class="book-button">Search Flights</button>
+            </form>
+        </section>
+
+        <section class="flight-results">
+            <h2>Available Flights</h2>
+            <div class="flight-card">
+                <div class="flight-info">
+                    <h3>Flight SKY123</h3>
+                    <p>New York (JFK) → Los Angeles (LAX)</p>
+                    <p>Departure: 08:00 AM | Arrival: 11:00 AM</p>
+                    <p>Duration: 5h 00m</p>
+                </div>
+                <div class="flight-price">
+                    <p>$299</p>
+                    <button class="book-button">Book Now</button>
+                </div>
+            </div>
+
+            <div class="flight-card">
+                <div class="flight-info">
+                    <h3>Flight SKY456</h3>
+                    <p>New York (JFK) → London (LHR)</p>
+                    <p>Departure: 10:30 PM | Arrival: 10:30 AM (Next Day)</p>
+                    <p>Duration: 7h 00m</p>
+                </div>
+                <div class="flight-price">
+                    <p>$899</p>
+                    <button class="book-button">Book Now</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 SkyHigh Airlines. All rights reserved.</p>
+    </footer>
+</body>
+</html>
